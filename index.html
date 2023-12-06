@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Introducción a Javascript">
+    <meta name="robots" content="index, follow">
+    <title>Javascript</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Descubriendo Javascript</h1>
+        <nav>
+            <ul>
+                <li>Menú</li>
+                <li>Quién soy</li>
+                <li>Contacto</li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <article>
+            <h2>¿Qué es Javascript?</h2>
+            <p>Empecemos por el principio: en 1995, y en base a un navegador actualmente inexistente:<a
+                    href="https://es.wikipedia.org/wiki/Netscape_Navigator">NetScape </a>, surge este
+                lenguaje de programación a manos de <a href="https://es.wikipedia.org/wiki/Brendan_Eich"> Brendan
+                    Eich</a>, cuyo objetivo sería interactuar con las acciones del usuario, además de ganar
+                versatilidad en diseño. 
+                En 1998. Microsoft crea el elemento <a href="https://developer.mozilla.org/es/docs/Web/API/XMLHttpRequest"> XML HttpRequest</a>: el "padre" de <a href="https://www.w3schools.com/xml/ajax_intro.asp"> AJAX</a>, 
+                que nos permite cargar o interactuar con contenido de backend si recargar la página al completo.
+                En el año 2000 <a href="https://es.wikipedia.org/wiki/Douglas_Crockford">Douglas Crockford</a> crea una forma de estandarizar objetos en Javascript: el documento <a href="https://es.wikipedia.org/wiki/Douglas_Crockford">JSON</a>, "javaScript Object Notation": 
+                un formato de texto sencillo para el intercambio de datos, considerado un formato independiente del lenguaje debido a que cobrço importancia como alternativa a <a href="https://es.wikipedia.org/wiki/Extensible_Markup_Language">XML</a>
+                En el año 2004 Gmail empezó a utilizar a Javascript y AJAX para optimizar sus procesos, por lo que el auge del lenguaje era ya una realidad, siendo así que en 2006 el afamado programador y empresario <a href="https://es.wikipedia.org/wiki/John_Resig">John Resig</a> crea la librería <a href="https://es.wikipedia.org/wiki/JQuery">jQuery</a>,
+                software libre y de código abierto, diseñado con una sintaxis cuya meta es facilitar la navegación por un documento, crear animaciones, desarrollar aplicaciones AJAX entre otros.
+                </p>
+        </article>
+
+        <article>
+            <h3>Diferencias con Java</h3>
+                <ul>
+                    <li>JavaScript es un lenguaje interpretado: su código fuente se ejecuta directamente, instrucción a instrucción; no pasa por un proceso de compilación sino que un programa intérprete lee la instrucción a tiempo real y la ejecuta.
+                        Por el contratio, <a href="https://es.wikipedia.org/wiki/Java_(lenguaje_de_programaci%C3%B3n)">Java</a> es un lenguaje compilado: es convertido directamente a código que el procesador puede ejecutar, así que es más rápido y eficiente que un lenguaje interpretado, además de ofrecer
+                        al desarrollador@ más control sobre aspectos del hardware. 
+                    </li> 
+                    <li>Java está orientado a objetos puros mientras que JavaScript puede emular la prorgamación orientada a objetos
+
+                    </li>
+                    <li>JavaScript es dinámico, flexible y sencillo a la hora de trabajar, pero Java tiene variables definidas que no se pueden modificar, lo que lo hace más complejo. 
+
+                    </li>
+                    <li>El tipado de Java es fuerte, más estricto en cuanto al tipo de dato que se puede asignar a una variable; esta definición no se puede cambiar, lo que da lugar a menos margen de error que con Javascript:
+                        este tiene un tipo de tipado más débil, donde una misma variable puede contener texto, luego un objeto, array o número.
+                    </li>
+                </ul>
+            
+           
+        </article>
+
+        <article>
+            <h3>¿Qué puedo hacer con Javascript?</h3>
+            <p>Puede agregar nuevo HTML a la página, cambiar el contenido existente y sus estilos. Además, puede reaccionar a las acciones de los usuarios, recordar datos en el lado del cliente con el almacenamiento local, obtener y configurar cookies, hacer preguntas a los visitantes y mostrar mensajes.
+                También, puede enviar solicitudes a servidores remotos, carga y descargar archivos.
+            </p>
+        </article>
+
+        <div>
+            <ul>
+                <li>
+                    <!-- AÑADIR MÁS VENTAJAS - DESVENTAJAS  -->
+                    <h4>Ventajas:</h4>   
+                    <ol>
+                        <li>Es multiplataforma:</li><p>el intérprete suele estar en varios sistemas operativos, por lo que no hay que adaptar el código a una plataforma en concreto.</p>
+                        <li>Portabilidad:</li><p>el mismo programa puede llevarse a diferentes plataformas</p>
+                        <li>Mayor rendimiento</li><p>Al ser lenguaje interpretado se ejecuta en el navegador cliente, lo que disminuye la carga de trabajo del servidor web</p>
+                        <p>Es decir: integra completamente HTML y CSS, simplifica y es soportado por la mayoría de navegadores (habilitado de forma predeterminada).</p>
+                    </ol>
+                </li>
+
+                <li>
+                    <h4>Desventajas</h4>
+                    <ol>
+                        <li>Seguridad del lado del cliente:</li><p>como su código se ejecuta en el navegador del usuario, hay riesgo de ataques como inyección de código o cross-site-scripting, por lo que hay que tomar medidas
+                            para asegurar el código y prevenir estos ataques.
+                        </p>
+                        <li>Bajo rendimiento en aplicaciones complejas:</li><p>al se un lenguaje interpretado, su rendimiento puede verse afectado a pesar de que los navegadores actuales hayan mejorado su ejecución; hablamos en casos de webs muy complejas o dispositivos con recursos limitados.
+                            Su tipo de lenguaje es, como véis, tanto una posible ventaja como un posible obstáculo en el camino.
+                        </p></li>
+                        <li>Dificultad para indexar en motores de búsqueda:</li><p>el contenido dinámico generado por este lenguaje complica la indexación para muchos motores de búsqueda aún.</p>
+                    <li>Mantenimiento y legibilidad complicados:</li><p>conforme las aplicaciones web se vuelven más o grandes o complejas, este lenguaje de programación puede llegar a ser difícil de entender si uno no tiene muy dominado y organizado su código</p>
+                    </ol>
+                </li>
+            </ul>
+        </div>
+        <aside> <a href="https://adalab.es/bootcamp-programacion/"></a> ¡Aprende a programar con Javascript!</aside>
+        <aside> <a href="https://adalab.es/bootcamp-data/"></a> Curso de Python</aside>
+        
+        <h5>Otros lenguajes de programación:</h5>
+        <ol>
+            <li><a href="https://es.wikipedia.org/wiki/Python">Python</a></li>
+            <li><a href="https://www.xataka.com/basics/que-html5-que-novedades-ofrece">HTML</a></li>
+            <li><a href=""> PHP</a></li>
+            <li><a href="">C#</a></li>
+        </ol>
+       <h6>Fuentes:</h6>
+       <ul>
+        <li><a href="https://lenguajesdeprogramacion.net/">lenguajesdeprogramación.net</a></li>
+        <li><a href="https://www.hackaboss.com/">hackaboss.com</a></li>
+        <li><a href="https://keepcoding.io/">keepcoding.io</a></li>
+        <li><a href="https://developer.mozilla.org/es/">developer.mozilla.org</a></li>
+        <li><a href="https://es.javascript.info/">javascript.info</a></li>
+        <li><a href="https://www.hostinger.es/tutoriales">hostinger.es</a></li>
+        <li><a href="https://www.rumpelstinski.es/">rumpelstinski.es</a></li>
+        <li><a href="https://www.freecodecamp.org/espanol/news">freecodecamp.org</a></li>
+        <li><a href="https://blog.hubspot.es">blog.hubspot.es</a></li>
+       <li><a href="https://www.xataka.com/">xataka.com</a></li>
+        </ul>
+            
+    </main>
+    <footer>
+        Mithkara © 2023
+    </footer>
+</body>
+
+</html>
